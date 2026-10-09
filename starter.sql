@@ -1,8 +1,12 @@
-SET SERVEROUTPUT ON;
+SERVEROUTPUT ON;
 
+DECLARE
+    marks NUMBER := 65;
 BEGIN
-
-    -- Write a FOR LOOP to display numbers from 1 to 10.
-
+    IF marks >= 50 THEN
+        DBMS_OUTPUT.PUT_LINE('Student has Passed');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Student has Failed');
+    END IF;
 END;
 /
